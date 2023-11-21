@@ -1,0 +1,143 @@
+@font-face {font-family: "Playlist"; src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot"); src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff") format("woff"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist") format("svg"); }
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+
+
+    .app-container {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      text-align: center;
+      background-image: url('../../assets/bg2.jpg'); 
+      background-size: cover; 
+      background-position: center;
+      background-repeat: no-repeat; 
+    }
+      
+
+
+  .container-wrapper{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .header {
+    
+      font-size: 70px;
+    
+      padding: 10px;
+      font-family: 'playlist';
+      font-weight: 500;
+      backdrop-filter: blur(6px);
+
+    }
+    .footer {
+      font-family: 'playlist';
+      padding: 10px;
+      font-size: 20px;
+      backdrop-filter: blur(10px);
+    }
+    
+    .editor-space {
+    
+      padding: 20px;
+      background-color: #f4f1de;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      padding-top: 24px;
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-bottom:68px;
+    
+    }
+    
+
+
+  .ql-snow .ql-editor {
+      padding: 10px;
+      font-size: 16px;
+      line-height: 1.6; 
+      height: 350px;
+    }
+
+  
+
+
+  .download-button {
+    margin-top: 40px; 
+    padding: 13px;
+    border-radius: 7px;
+    font-size: 20px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+
+
+  .icon-download {
+    padding-right: 10px;
+  }
+
+  .heart-icon {
+    padding-right: 4px;
+    font-size: 17px;
+  }
+
+  .github-icon {
+    padding-left: 7px;
+    cursor:pointer;
+    outline:none;
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+  }
+
+
+  .btn{
+    background-color: #fff;
+    padding: 0.8em 1.5em;
+    border-radius: 20em;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 100ms linear;
+    color: #0ebac5;
+    position: relative;
+    
+  }
+
+
+  .btn:hover{
+    background-color: #2ec4b6;
+    color: white;
+  }
+
+  
+
+  @media (max-width: 768px) {
+    .editor-space {
+      width: 65%; 
+      padding-top: 24px;
+      padding-right: 24px;
+      padding-left: 24px;
+      padding-bottom:138px;
+      height: 200px;
+      margin-left: 10px;
+    }
+
+    .download-button {
+      margin-top: 40px; 
+      padding: 13px;
+      border-radius: 7px;
+      font-size: 14px;
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    }
+
+  }
+
+
+  

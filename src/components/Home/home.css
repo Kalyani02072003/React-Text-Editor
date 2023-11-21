@@ -1,0 +1,156 @@
+@font-face {font-family: "Playlist"; src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot"); src: url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff") format("woff"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist") format("svg"); }
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+  /* CardComponent.css */
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+        background: url('../../assets/bg2.jpg') center/cover fixed;
+    }
+    
+    .card {
+        position: relative;
+        width: 450px;
+        height: 550px;
+        overflow: hidden;
+        /* background: rgba(0, 0, 0, 0.5);  */
+        backdrop-filter: blur(3px);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../../assets/bg2.jpg') center/cover fixed;
+        filter: blur(10px); 
+        z-index: -1;
+    }
+    
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    .icon {
+        width: 300px;
+        height: 300px;
+        /* background: url('../../assets/bg2.jpg') center/cover; */
+        transition: opacity 0.3s ease;
+        padding: 20px;
+    }
+    
+    .card:hover .icon {
+        opacity: 0;
+    }
+    
+    .card-overlay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(46, 196, 182, 0.6); /* Faint red background on hover */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    
+    .card:hover .card-overlay {
+        opacity: 1;
+    }
+    
+    .card-overlay .content1 {
+        color: white;
+        font-size: 140px;
+        margin: 0;
+        font-family: 'playlist';
+    }
+    .card-overlay .content2{
+        color: white;
+        font-size: 25px;
+        padding: 20px;
+        top: -10;
+    }
+    
+    .card-overlay button {
+        margin-top: 0px;
+        padding: 10px 20px;
+        background-color: white;
+        color: #2ec4b6;
+        border: none;
+        cursor: pointer;
+        font-size: 25px;
+        border-radius: 20em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+        font-weight: 700;
+    }
+    .card-overlay button:hover{
+        background-color: #2ec4b6;
+        color: white;
+    }
+    
+
+
+    @media (max-width: 768px) {
+        .card {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            overflow: hidden;
+            /* background: rgba(0, 0, 0, 0.5);  */
+            backdrop-filter: blur(3px);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .icon {
+           
+            width: 100px;
+            height: 100px;
+            /* background: url('../../assets/bg2.jpg') center/cover; */
+            transition: opacity 0.3s ease;
+            padding: 20px;
+        }
+        
+        .card-overlay .content1 {
+            color: white;
+            font-size: 90px;
+            margin: 0;
+        }
+        .card-overlay .content2{
+            color: white;
+            font-size: 15px;
+            padding: 10px;
+            top: -10;
+        }
+        
+        .card-overlay button {
+            margin-top: 0px;
+            padding: 10px 20px;
+            background-color: white;
+            color: #2ec4b6;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 20em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+            font-weight: 700;
+        }
+        .card-overlay button:hover{
+            background-color: #2ec4b6;
+            color: white;
+        }
+
+  }
